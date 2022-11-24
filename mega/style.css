@@ -100,8 +100,6 @@
   animation-delay: 450ms;
 }
 
-
-
 .n10 div {
   background-color: black;
   width: calc(var(--worm-size) / 5);
