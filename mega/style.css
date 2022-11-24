@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --animation: translateY(20%);
+  --box-color: 200deg;
+  --worm-size: 50px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: var(--animation);
+  }
+  100% {
+    transform: transform(0%, 0%);
+  }
+}
+
+.worm {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.box {
+  background-color: hsl(var(--box-color), 100%, 50%);
+  width: var(--worm-size);
+  max-height: 222px;
+  display: grid;
+  place-items: center;
+  will-change: transform;
+  height: var(--worm-size);
+  max-width: 222px;
+  transition: transform 300ms ease;
+  user-select: none;
+  animation: pulse 500ms infinite;
+}
+
+.n1 {
+  display: flex;
+}
+
+.n2 {
+  background-color: hsl(var(--box-color), 100%, 47%);
+  animation-delay: 50ms;
+  display: flex;
+}
+
+.n3 {
+  background-color: hsl(var(--box-color), 100%, 44%);
+  animation-delay: 100ms;
+  display: flex;
+}
+
+.n4 {
+  background-color: hsl(var(--box-color), 100%, 41%);
+  animation-delay: 150ms;
+  display: flex;
+}
+
+.n5 {
+  background-color: hsl(var(--box-color), 100%, 38%);
+  animation-delay: 200ms;
+  display: flex;
+}
+
+.n6 {
+  background-color: hsl(var(--box-color), 100%, 35%);
+  animation-delay: 250ms;
+  display: flex;
+}
+
+.n7 {
+  background-color: hsl(var(--box-color), 100%, 32%);
+  animation-delay: 300ms;
+  display: flex;
+}
+
+.n8 {
+  background-color: hsl(var(--box-color), 100%, 29%);
+  animation-delay: 350ms;
+  display: flex;
+}
+
+.n9 {
+  background-color: hsl(var(--box-color), 100%, 26%);
+  animation-delay: 400ms;
+  display: flex;
+}
+
+.n10 {
+  background-color: hsl(var(--box-color), 100%, 23%);
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--worm-size) / 5);
+  animation-delay: 450ms;
+}
+
+
+
+.n10 div {
+  background-color: black;
+  width: calc(var(--worm-size) / 5);
+  height: calc(var(--worm-size) / 5);
+  border-radius: 50%;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: sans-serif;
+}
+
+.warning {
+	color: red;
+	font-weight: 900;
+}
+
+button {
+  font-size: 15px;
+}
+
+a {
+  color: blue;
+}
