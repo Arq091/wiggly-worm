@@ -29,7 +29,7 @@ function setsize() {
 }
 
 function megaworm() {
-    window.location.assign("../mega")
+    window.location.assign("/mega")
 }
 
 function normalworm() {
