@@ -26,7 +26,7 @@ function setsize() {
         document.documentElement.style
 		.setProperty('--worm-size', sz.value + 'px');
     } else {
-	alert(sz.value + "is not a number. Please recheck your input. Note that NO UNITS are needed.")
+	alert("\"" sz.value + "\" is not a number. Please recheck your input. Note that NO UNITS are needed.")
     }
 }
 
