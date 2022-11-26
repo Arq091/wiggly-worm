@@ -22,7 +22,7 @@ function setsize() {
     if (sz.value == '') {
         document.documentElement.style
 		.setProperty('--worm-size', '50px');
-    } else if (typeof sz.value == "number") {
+    } else if (typeof parseInt(sz.value) == "number") {
         document.documentElement.style
 		.setProperty('--worm-size', sz.value + 'px');
     } else {
