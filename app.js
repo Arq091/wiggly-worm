@@ -23,7 +23,7 @@ function setsize() {
         document.documentElement.style
 		.setProperty('--worm-size', '50px');
     } else if (isNaN(parseInt(sz.value))) {
-	alert("\"" + sz.value + "\" is not a number. Please recheck your input. Note that NO UNITS are needed.")    
+	alert("\"" + sz.value + "\" is not a number. Please recheck your input. Note that NO UNITS are needed."); 
     } else {
 	document.documentElement.style
             .setProperty('--worm-size', sz.value + 'px');
