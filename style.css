@@ -85,8 +85,12 @@
   margin-bottom: 20px;
 }
 
-label {
+body {
   font-family: sans-serif;
+}
+
+.note {
+  font-size: 10px
 }
 
 .warning {

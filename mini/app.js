@@ -4,12 +4,12 @@ function vertical() {
         document.documentElement.style
             .setProperty('--animation', 'translateX(20%)');
         document.getElementById("worm").style.flexDirection = "column";
-        document.getElementById("n10").style.flexDirection = "column";
+        document.getElementById("n3").style.flexDirection = "column";
     } else {
         document.documentElement.style
             .setProperty('--animation', 'translateY(20%)');
         document.getElementById("worm").style.flexDirection = "row";
-        document.getElementById("n10").style.flexDirection = "row";
+        document.getElementById("n3").style.flexDirection = "row";
     }
 }
 
