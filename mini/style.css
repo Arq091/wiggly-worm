@@ -45,24 +45,12 @@
 }
 
 .n2 {
-  background-color: hsl(var(--box-color), 100%, 45%);
+  background-color: hsl(var(--box-color), 100%, 40%);
   animation-delay: 50ms;
   display: flex;
 }
 
 .n3 {
-  background-color: hsl(var(--box-color), 100%, 40%);
-  animation-delay: 100ms;
-  display: flex;
-}
-
-.n4 {
-  background-color: hsl(var(--box-color), 100%, 35%);
-  animation-delay: 150ms;
-  display: flex;
-}
-
-.n5 {
   background-color: hsl(var(--box-color), 100%, 30%);
   display: flex;
   justify-content: center;
@@ -70,7 +58,7 @@
   animation-delay: 200ms;
 }
 
-.n5 div {
+.n3 div {
   background-color: black;
   width: calc(var(--worm-size) / 5);
   height: calc(var(--worm-size) / 5);
