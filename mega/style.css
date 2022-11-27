@@ -102,8 +102,8 @@
 
 .n10 div {
   background-color: black;
-  width: calc(var(--worm-size) / 5);
-  height: calc(var(--worm-size) / 5);
+  width: calc(var(--worm-size) / 10);
+  height: calc(var(--worm-size) / 10);
   border-radius: 50%;
   max-width: 80px;
   max-height: 80px;
