@@ -30,18 +30,12 @@ function setsize() {
     }
 }
 
-function home() {
-    window.location.assign("../")
-}
-
 function megaworm() {
     window.location.assign("mega/index.html")
 }
 
 function normalworm() {
-    window.location.assign("normal/index.html")
+    window.location.assign("../")
 }
 
-function miniworm() {
-    window.location.assign("mini/index.html")
-}
+
