@@ -46,4 +46,9 @@ function miniworm() {
     window.location.assign("mini/index.html")
 }
 
-
+function newf() {
+    const newft = `1.2.0 new features:
+    - version indicator on homepage
+    - now with random worms!`
+    alert(newft);
+}
