@@ -55,7 +55,7 @@
   display: flex;
   justify-content: center;
   gap: calc(var(--worm-size) / 5);
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 
 .n3 div {
