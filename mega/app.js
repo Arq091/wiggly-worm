@@ -4,12 +4,12 @@ function vertical() {
         document.documentElement.style
             .setProperty('--animation', 'translateX(20%)');
         document.getElementById("worm").style.flexDirection = "column";
-        document.getElementById("n10").style.flexDirection = "column";
+        document.getElementById("n5").style.flexDirection = "column";
     } else {
         document.documentElement.style
             .setProperty('--animation', 'translateY(20%)');
         document.getElementById("worm").style.flexDirection = "row";
-        document.getElementById("n10").style.flexDirection = "row";
+        document.getElementById("n5").style.flexDirection = "row";
     }
 }
 
@@ -21,14 +21,23 @@ function setcolor() {
 function setsize() {
     if (sz.value == '') {
         document.documentElement.style
-		.setProperty('--worm-size', '50px');
+			.setProperty('--worm-size', '50px');
     } else if (isNaN(parseInt(sz.value))) {
-	alert("\"" + sz.value + "\" is not a number. Please recheck your input. Note that NO UNITS are needed."); 
+		alert("\"" + sz.value + "\" is not a number. Please recheck your input. Note that NO UNITS are needed."); 
     } else {
-	document.documentElement.style
-            .setProperty('--worm-size', sz.value + 'px');
+		document.documentElement.style
+			.setProperty('--worm-size', sz.value + 'px');
     }
 }
+
+function randworm() {
+	var rcol = Math.floor(Math.random() * 360);
+    var rsz = Math.floor(Math.random() * 100) + 1;
+	document.documentElement.style
+        .setProperty('--box-color', rcol);
+	document.documentElement.style
+        .setProperty('--worm-size', rsz + 'px');
+}	
 
 function home() {
     window.location.assign("../")
