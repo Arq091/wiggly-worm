@@ -31,10 +31,12 @@ function setsize() {
 }
 
 function randworm() {
-	let rcolor = Math.floor(Math.random() * 360);
-	let rsize = Math.floor(Math.random() * 100) + 1;
-	document.documentElement.style.setProperty('--box-color', rcolor);
-	document.documentElement.style.setProperty('--worm-size', rsize + 'px');
+	var rcol = Math.floor(Math.random() * 360);
+    var rsz = Math.floor(Math.random() * 100) + 1;
+	document.documentElement.style
+        .setProperty('--box-color', rcol);
+	document.documentElement.style
+        .setProperty('--worm-size', rsz + 'px');
 }	
 
 function home() {
