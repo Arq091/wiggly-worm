@@ -50,5 +50,5 @@ function newf() {
     const newft = `1.2.0 New Features:
     - With Version Indicator on Homepage
     - Now with Random Worms!`
-    alert(newft)
+    alert(newft);
 }
